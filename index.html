@@ -1,0 +1,592 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#ffddb1", "inverse-on-surface": "#f2f1ec", "background": "#fbf9f4", "primary-fixed-dim": "#ffba48", "surface-variant": "#e4e2dd", "surface-container": "#f0eee9", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-surface": "#30312e", "surface-bright": "#fbf9f4", "on-primary-container": "#6a4600", "on-tertiary": "#ffffff", "outline": "#847560", "on-surface": "#1b1c19", "on-error-container": "#93000a", "on-secondary-container": "#636262", "on-primary-fixed-variant": "#614000", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#474646", "secondary": "#5f5e5e", "on-secondary": "#ffffff", "surface-container-highest": "#e4e2dd", "on-secondary-fixed": "#1b1b1c", "tertiary-fixed-dim": "#c9c6c5", "surface-tint": "#815600", "surface-container-high": "#eae8e3", "tertiary-container": "#c0bebd", "on-background": "#1b1c19", "error-container": "#ffdad6", "on-tertiary-container": "#4e4d4d", "tertiary-fixed": "#e5e2e1", "primary": "#815600", "tertiary": "#5f5e5e", "surface": "#fbf9f4", "on-secondary-fixed-variant": "#474746", "secondary-container": "#e2dfde", "inverse-primary": "#ffba48", "surface-container-low": "#f5f3ee", "on-surface-variant": "#524533", "primary-container": "#ffae00", "surface-dim": "#dbdad5", "on-primary-fixed": "#291800", "secondary-fixed": "#e5e2e1", "outline-variant": "#d7c4ac", "secondary-fixed-dim": "#c8c6c5", "on-tertiary-fixed": "#1c1b1b" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "3.5rem", "space-sm": "0.75rem", "gutter-mobile": "1rem", "margin": "3rem", "gutter": "1.5rem", "space-md": "1.25rem", "margin-mobile": "1.25rem", "space-lg": "2rem", "space-xs": "0.375rem" }, "fontFamily": { "body-code": [ "Geist" ], "display-hero": [ "Syne" ], "body-lg": [ "Geist" ], "label-meta": [ "Geist" ], "headline-lg-mobile": [ "Syne" ], "display-hero-mobile": [ "Syne" ], "headline-md": [ "Syne" ], "headline-lg": [ "Syne" ], "body-md": [ "Geist" ], "headline-project": [ "Syne" ], "label-pill": [ "Geist" ], "title-md": [ "Syne" ] }, "fontSize": { "body-code": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "display-hero": [ "84px", { "lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-meta": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero-mobile": [ "44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "56px", { "lineHeight": "62px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-project": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-pill": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "title-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="MS Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UaP9ZtQA7s0llt4fGCPYQhHjFFJVGmI_5tZin7tb8w_CXLydJtd4RVoKjNd1sgn6-PqbTiPfWDZGf8m_fBTCdViV1umOC-xRoQO7kQyit7AHv9cOuKYL4yHeKc6A-PHbJdRJy8zTp2bfgIybln86Dxy7dRi7vmHaFxF0YMkyg4I3XZrmJm_fOBR_UY1NLaUmfSUn_fapaTX9Sva5V_jwjPiSKb1caqPBU_M9pCTg1h"><span class="font-title-md text-title-md tracking-tight text-on-surface">Md Saad</span></div><nav class="hidden lg:flex items-center gap-space-md font-label-pill text-label-pill tracking-wider uppercase" data-active-classes="text-on-surface font-semibold bg-surface-container-high rounded-full px-3 py-1.5"><a aria-current="page" class="transition-colors text-on-surface font-semibold bg-surface-container-high rounded-full px-3 py-1.5" data-path="home" href="#">Home</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="experience" href="#">Experience</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-2 bg-surface-container px-3.5 py-1.5 rounded-full font-label-meta text-label-meta uppercase tracking-wider text-on-surface"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="">Available for new projects</span></div><a aria-label="Get in touch" class="w-11 h-11 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center hover:bg-primary-container hover:text-on-primary-fixed transition-all group shadow-sm" data-path="contact" href="#"><span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0 ml-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPRYy4svVyh6HIV_jSjhLB43k1_-0lOfz9a6l6X-0EHPYQi5et4nivHCekLYCqSMXjkdS3vVBleKtHsoRzCVHqKgKnKQSDjMkmZTIgXNJnm7gZirI-P89QxbhyoETwbA8BhyQY46N8sLvrDwXmc664MCLBK6JcQKdcU4N1GR8r1NR1PucW6dAYYsAgqcfvErBKsdZWhTQMNOvf3DSJpLT1dxkDgiPAMggvEvnoXDbjkT79GUhx9ph832x82VPbidqGjQ"></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin pt-6 lg:pt-12 pb-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Editorial Statement & Stats -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-10">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container font-label-meta text-label-meta text-on-surface uppercase tracking-wider w-fit">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            Portfolio 2025 / v2.4
+          </div>
+<h1 class="font-display-hero text-6xl sm:text-7xl lg:text-display-hero tracking-tighter leading-none text-on-surface">
+            digital<br>
+<span class="italic font-light text-outline-variant">/</span> builder
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Hi, I'm <span class="text-on-surface font-semibold">Md Saad</span>. An AI + Automation student who builds websites and explores what technology can do next.
+          </p>
+</div>
+<!-- Social Action Strip -->
+<div class="flex items-center gap-3">
+<span class="font-label-meta text-label-meta text-on-surface-variant uppercase tracking-widest mr-2">Connect:</span>
+<a aria-label="GitHub" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all group" href="https://github.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[19px] transition-transform group-hover:scale-110">code</span>
+</a>
+<a aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all group" href="https://linkedin.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[19px] transition-transform group-hover:scale-110">hub</span>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all group" href="https://instagram.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[19px] transition-transform group-hover:scale-110">camera</span>
+</a>
+<a aria-label="X/Twitter" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all group" href="https://x.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[19px] transition-transform group-hover:scale-110">terminal</span>
+</a>
+</div>
+<!-- Key Editorial Metrics Bento Cards -->
+<div class="grid grid-cols-2 gap-4 max-w-lg pt-4">
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-between shadow-sm">
+<span class="font-headline-lg text-4xl lg:text-headline-lg font-bold text-on-surface tracking-tighter">+20</span>
+<div class="mt-3 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<p class="font-label-meta text-label-meta text-on-surface-variant uppercase tracking-wider">Websites built &amp; launched</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col justify-between shadow-sm">
+<span class="font-headline-lg text-4xl lg:text-headline-lg font-bold text-on-surface tracking-tighter">+100</span>
+<div class="mt-3 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<p class="font-label-meta text-label-meta text-on-surface-variant uppercase tracking-wider">Tech topics &amp; automations</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Warm Amber Showcase Portal Card -->
+<div class="lg:col-span-5 relative mt-8 lg:mt-0">
+<div class="bg-primary-container rounded-[40px] p-6 sm:p-8 relative overflow-hidden shadow-2xl transition-transform duration-500 hover:shadow-[0_24px_50px_-12px_rgba(255,174,0,0.35)]">
+<!-- Ambient Circular Background Accent -->
+<div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-white/20 blur-3xl pointer-events-none"></div>
+<!-- Top floating icons row -->
+<div class="flex items-center justify-between relative z-20 mb-6">
+<div class="flex items-center gap-2 bg-inverse-surface/90 backdrop-blur-md text-inverse-on-surface px-4 py-2 rounded-full font-label-meta text-label-meta tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="">AI + Automation Explorer</span>
+</div>
+<button aria-label="Global status" class="w-11 h-11 rounded-full bg-white/70 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</button>
+</div>
+<!-- Portrait Imagery Container with Cursive Calligraphy Badge -->
+<div class="relative w-full aspect-[4/5] rounded-[30px] overflow-hidden bg-inverse-surface shadow-inner group">
+<img alt="Md Saad - AI + Automation student &amp; digital builder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnWUa4oyAbgUMawlAzlumLA6cFfZhtZvXxThzDSxAqsmicLJfg7YAEVa1y17ez_3NXES-MT_S_nLd1tGDe27eXVkClw9oLkkmzLT7AMM_vU4ZlT7Krt2CTPWfHDFZRa5vm9k8SDdhP90-eLu__064aShOWjf1GfeKLOGOzYTLGaI_tSnr4_a684JBLBPRlDj2ImLRyczOSijYaUPeW46piOv6AwumBp2qaco99c0ncA7v0wZ6DVTb9kO7LgOYuKtx1ew">
+<!-- Calligraphic Script Badge overlay -->
+<div class="absolute bottom-5 right-5 pointer-events-none select-none z-20">
+<span class="font-display-hero italic text-4xl lg:text-5xl text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] font-light tracking-wide">Saad</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- Bottom Anchor Controls -->
+<div class="flex items-center justify-between pt-6 relative z-20">
+<a aria-label="Explore Projects" class="w-14 h-14 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center hover:bg-white hover:text-on-surface transition-all group shadow-md" href="#projects">
+<span class="material-symbols-outlined text-[24px] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</a>
+<div class="text-right">
+<p class="font-body-code text-body-code text-on-primary-fixed uppercase tracking-wider">Coordinates</p>
+<p class="font-label-meta text-label-meta text-on-primary-fixed-variant">23.8103° N / 90.4125° E</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: MARQUEE BAND -->
+<div class="w-full bg-inverse-surface py-5 overflow-hidden select-none my-6">
+<div class="flex whitespace-nowrap items-center font-display-hero text-lg lg:text-title-md font-bold text-inverse-on-surface tracking-wider uppercase animate-[marquee_24s_linear_infinite]">
+<span class="inline-flex items-center gap-6 mx-4">
+<span class="">about</span><span class="text-primary-container">•</span>
+<span class="">curiosity</span><span class="text-primary-container">•</span>
+<span class="">ai &amp; automation</span><span class="text-primary-container">•</span>
+<span class="">websites</span><span class="text-primary-container">•</span>
+<span class="">building the future</span><span class="text-primary-container">•</span>
+<span class="text-primary-container">md saad</span><span class="text-primary-container">•</span>
+</span>
+<span class="inline-flex items-center gap-6 mx-4">
+<span class="">about</span><span class="text-primary-container">•</span>
+<span class="">curiosity</span><span class="text-primary-container">•</span>
+<span class="">ai &amp; automation</span><span class="text-primary-container">•</span>
+<span class="">websites</span><span class="text-primary-container">•</span>
+<span class="">building the future</span><span class="text-primary-container">•</span>
+<span class="text-primary-container">md saad</span><span class="text-primary-container">•</span>
+</span>
+<span class="inline-flex items-center gap-6 mx-4">
+<span class="">about</span><span class="text-primary-container">•</span>
+<span class="">curiosity</span><span class="text-primary-container">•</span>
+<span class="">ai &amp; automation</span><span class="text-primary-container">•</span>
+<span class="">websites</span><span class="text-primary-container">•</span>
+<span class="">building the future</span><span class="text-primary-container">•</span>
+<span class="text-primary-container">md saad</span><span class="text-primary-container">•</span>
+</span>
+</div>
+</div>
+<style>
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+<!-- SECTION 3: ABOUT SECTION (Dark Stage with Crosshair Markers) -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin my-12">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-[40px] py-20 px-8 sm:px-14 lg:px-20 relative overflow-hidden shadow-2xl">
+<!-- Architectural Corner Crosshairs -->
+<span class="absolute top-6 left-6 font-body-code text-secondary text-sm select-none">+</span>
+<span class="absolute top-6 right-6 font-body-code text-secondary text-sm select-none">+</span>
+<span class="absolute bottom-6 left-6 font-body-code text-secondary text-sm select-none">+</span>
+<span class="absolute bottom-6 right-6 font-body-code text-secondary text-sm select-none">+</span>
+<!-- Lateral subtle framing grid elements -->
+<div class="absolute left-6 top-1/2 -translate-y-1/2 hidden md:block">
+<span class="font-body-code text-label-meta text-secondary [writing-mode:vertical-rl] tracking-widest uppercase">sys // bio.01</span>
+</div>
+<div class="absolute right-6 top-1/2 -translate-y-1/2 hidden md:block">
+<span class="font-body-code text-label-meta text-secondary [writing-mode:vertical-rl] tracking-widest uppercase">status // active builder</span>
+</div>
+<div class="max-w-4xl mx-auto flex flex-col items-center text-center space-y-10 relative z-10">
+<!-- Section Identifier Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md font-label-meta text-label-meta uppercase tracking-widest text-primary-container">
+<span class="">/ABOUT SAAD</span>
+</div>
+<!-- Geometric Radial Bloom & Silhouette Centerpiece -->
+<div class="relative w-44 h-44 sm:w-56 sm:h-56 flex items-center justify-center my-4">
+<!-- Translucent petal-like bloom rings -->
+<div class="absolute inset-0 rounded-full bg-white/5 animate-pulse"></div>
+<div class="absolute -inset-4 rounded-full border border-white/10 opacity-70"></div>
+<div class="absolute -inset-8 rounded-full border border-white/5 opacity-50"></div>
+<!-- Inner Portrait Cutout Element -->
+<div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden bg-surface-container-high p-1 shadow-2xl">
+<img alt="Portrait of Md Saad" class="w-full h-full object-cover object-top rounded-full filter grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF5H7qJjfqBo1efWdHdhy4UmYhMeJTKUxYeH6HUNp6RqtaErFiBssEaKVtqiGwygKIiHErTPFRkX-qpoIAGH9WgCHFsqUdcUGsmCcc_Fl1pQY2idum81W0mTYrcdofIUPglT6PuFBMq7nbnWHApxJkMCLHbGeFG_hrlz7OtyoKTtrNCPG_0S9N1t6ZoHu0iPgAbz3mLW0eeLrRjquKxwXnUR1Vz8QJh4bsARetF7qn0nPiD7Tg9D5GJggosv5ssJKEwQ">
+</div>
+<!-- Decorative Amber Spark -->
+<div class="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-primary-container flex items-center justify-center text-on-primary-fixed shadow-lg">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+</div>
+</div>
+<!-- High-Impact Bio Text -->
+<div class="space-y-6">
+<h2 class="font-headline-md text-2xl sm:text-headline-md lg:text-4xl font-bold tracking-tight text-white leading-snug max-w-3xl">
+            I'm Md Saad, a student of <span class="text-primary-container font-extrabold underline decoration-white/20 underline-offset-8">AI + Automation</span>. I've built many websites and I'm endlessly curious about new tech: generative systems, autonomous agents, and fluid web experiences.
+          </h2>
+<p class="font-body-md text-body-md text-surface-container max-w-2xl mx-auto font-light leading-relaxed">
+            Bridging foundational machine learning theory with tactical front-end design engineering. Every day is dedicated to reducing cognitive friction through intelligent pipelines and aesthetic precision.
+          </p>
+</div>
+<!-- Interactive Skill Badges Matrix -->
+<div class="flex flex-wrap justify-center gap-2.5 pt-4 max-w-2xl">
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">Python</span>
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">PyTorch</span>
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">Next.js</span>
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">TailwindCSS</span>
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">n8n Automation</span>
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">LLM Fine-Tuning</span>
+<span class="px-4 py-2 rounded-full bg-white/10 hover:bg-primary-container hover:text-on-primary-fixed transition-colors font-label-pill text-label-pill text-white uppercase tracking-wider cursor-default">UI/UX Systems</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: SERVICES SECTION (Atmospheric Cloud Backdrop) -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin my-12" id="services">
+<div class="bg-surface-container rounded-[40px] p-8 sm:p-14 relative overflow-hidden shadow-sm">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="font-label-meta text-label-meta text-primary uppercase tracking-widest font-bold">/SERVICE</span>
+<h2 class="font-headline-lg text-4xl lg:text-headline-lg text-on-surface tracking-tight font-bold mt-2">What I Craft &amp; Automate</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Synthesizing modern reactive user interfaces with autonomous backends and algorithmic intelligence.
+        </p>
+</div>
+<!-- Accordion List Stack -->
+<div class="space-y-4">
+<!-- Row 1: Active Expanded Card with Pop-out Thumbnail -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-3xl p-8 relative shadow-xl overflow-hidden transition-all duration-300">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+<div class="space-y-3 max-w-xl">
+<div class="flex items-center gap-3">
+<span class="font-body-code text-primary-container text-body-code font-bold">01 /</span>
+<h3 class="font-title-md text-title-md font-bold tracking-tight text-white uppercase">WEB DESIGN &amp; DEV</h3>
+</div>
+<p class="font-body-md text-body-md text-surface-variant font-light">
+                Architecting high-performance web applications with kinetic typography, modern React frameworks, and immaculate craft.
+              </p>
+<div class="flex items-center gap-2 pt-2">
+<span class="px-3 py-1 rounded-full bg-white/10 text-white font-label-meta text-label-meta">Next.js</span>
+<span class="px-3 py-1 rounded-full bg-white/10 text-white font-label-meta text-label-meta">TypeScript</span>
+<span class="px-3 py-1 rounded-full bg-white/10 text-white font-label-meta text-label-meta">Tailwind</span>
+</div>
+</div>
+<!-- Tilted Floating Interface Mockup Pop-out -->
+<div class="hidden sm:block relative w-48 h-32 rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 bg-surface-container-high shrink-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="High quality UI preview mockup showing modern responsive sleek web application dashboard with dark and amber layout accents, charts and code elements" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8cGO-LebNpKIfNv7IIk_zFL-RBW5OHcRMdl7T2S6xHyeJ5sVUAnR2Whvsb2JMzt_JQwc4pZyOcSAUMgT68ofU1XrqT5h-CMHQHaHYacTiXY9V5OKiXzHcKNKs3nhOiqoKIbXa9aRcYfGJXwLsr-WK9cD3dTAW8Tj_XDs8HK9ZqXhf42fqo93QsniLCoAHcWL36H7Z79DpaPXbnxiPLLGRuhQag4iqqbSeQaumRt4')"></div>
+</div>
+<div class="flex items-center justify-end">
+<button aria-label="Close details" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Row 2: UI/UX DESIGN -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 flex items-center justify-between hover:bg-surface-container-high transition-all duration-300 group cursor-pointer shadow-sm">
+<div class="flex items-center gap-4 sm:gap-6">
+<span class="font-body-code text-on-surface-variant text-body-code font-semibold">02 /</span>
+<span class="font-headline-project text-xl sm:text-headline-project font-bold text-on-surface uppercase group-hover:text-primary transition-colors">UI/UX DESIGN</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-body-md text-body-md text-on-surface-variant">Figma, Design Systems, Prototypes</span>
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface group-hover:bg-inverse-surface group-hover:text-inverse-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span>
+</div>
+</div>
+</div>
+<!-- Row 3: AI & AUTOMATION -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 flex items-center justify-between hover:bg-surface-container-high transition-all duration-300 group cursor-pointer shadow-sm">
+<div class="flex items-center gap-4 sm:gap-6">
+<span class="font-body-code text-on-surface-variant text-body-code font-semibold">03 /</span>
+<span class="font-headline-project text-xl sm:text-headline-project font-bold text-on-surface uppercase group-hover:text-primary transition-colors">AI &amp; AUTOMATION</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-body-md text-body-md text-on-surface-variant">Autonomous Agents, n8n, LangChain</span>
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface group-hover:bg-inverse-surface group-hover:text-inverse-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span>
+</div>
+</div>
+</div>
+<!-- Row 4: WEBSITE BUILDING & CMS -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 flex items-center justify-between hover:bg-surface-container-high transition-all duration-300 group cursor-pointer shadow-sm">
+<div class="flex items-center gap-4 sm:gap-6">
+<span class="font-body-code text-on-surface-variant text-body-code font-semibold">04 /</span>
+<span class="font-headline-project text-xl sm:text-headline-project font-bold text-on-surface uppercase group-hover:text-primary transition-colors">WEBSITE BUILDING &amp; CMS</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden md:inline font-body-md text-body-md text-on-surface-variant">Full-stack, Headless CMS, SEO Ops</span>
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface group-hover:bg-inverse-surface group-hover:text-inverse-on-surface flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: PORTFOLIO / PROJECTS GRID (6 Bento Tiles) -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin my-16" id="projects">
+<!-- Section Headline with Overlapping Lowercase Word -->
+<div class="relative mb-12">
+<span class="pointer-events-none select-none font-display-hero text-7xl sm:text-8xl lg:text-[130px] font-extrabold text-outline-variant/30 leading-none block -mb-8 lg:-mb-14">projects</span>
+<div class="flex items-center justify-between relative z-10">
+<div>
+<span class="font-label-meta text-label-meta uppercase tracking-widest text-primary font-bold">/SELECTED WORK</span>
+<h2 class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Engineered Deployments</h2>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="font-body-code text-body-code text-on-surface-variant">6 Active Releases</span>
+</div>
+</div>
+</div>
+<!-- 6 Tiles Grid: 3 Top, 3 Bottom -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Tile 1: Kuro AI -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-[32px] p-6 flex flex-col justify-between h-[380px] relative overflow-hidden group shadow-lg">
+<div class="flex items-start justify-between relative z-20">
+<span class="px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary-fixed font-label-meta text-label-meta uppercase tracking-wider font-bold">Autonomous Agents</span>
+<a aria-label="Open Kuro AI" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-inverse-surface transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+<!-- Visual Mockup Canvas -->
+<div class="absolute inset-x-6 top-20 bottom-24 rounded-2xl overflow-hidden bg-surface-container-high opacity-85 group-hover:scale-105 group-hover:opacity-100 transition-all duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="Dark sophisticated user interface dashboard for Kuro AI featuring code streams, node graphs and amber indicator glows in a dark studio setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAdsfMtWdPfUTnm165tfpBgDyUgniVKUcTT3KDHprgL09v97qUjWICn-r50yKdEj_LS7IK_xJ1xOwq2p8mFcsOwwB9usaAYGM17HW-AjklS951GxtBh8dQeZ_733zl62qtwj7Ys5uvAbUQc-dS6DGtIFO20UKNLLSGfa3nqckPpt3iDdBHCe1gmzahgPSxK1s_0nSSEo9Ii9xAyW0Qud0aOtobYeZ-NnJk-ZrnsNk')"></div>
+</div>
+<div class="relative z-20 pt-4">
+<h3 class="font-headline-project text-2xl font-bold italic tracking-tight text-white">Kuro AI</h3>
+<p class="font-body-md text-body-md text-surface-variant">Intelligent Multi-Agent Workspace</p>
+</div>
+</div>
+<!-- Tile 2: Aetheria (Warm Amber Focal Tile) -->
+<div class="bg-primary-container text-on-primary-fixed rounded-[32px] p-6 flex flex-col justify-between h-[380px] relative overflow-hidden group shadow-lg">
+<div class="flex items-start justify-between relative z-20">
+<span class="px-3.5 py-1.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-meta text-label-meta uppercase tracking-wider font-bold">Web Studio</span>
+<a aria-label="Open Aetheria" class="w-10 h-10 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center group-hover:bg-white group-hover:text-inverse-surface transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+<div class="absolute inset-x-6 top-20 bottom-24 rounded-2xl overflow-hidden bg-inverse-surface/10 group-hover:scale-105 transition-all duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="High contrast editorial typography and 3D kinetic interaction layout mockup on warm amber background with black geometric frames" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1k4PsnALJtI0qB9touv_ODor-zNiVxsDK6HBD_JLeB6NawCnpYGNOjFg8bgr0Grj7EPMomskugOTANFXqLYIXOxZgH6xITc4Iw9rNRJTSn8zeRJ1dntOFSCFuXys5vs-JiOalQ7w8QykKfOTuLCGKVQpneCWGUZuoa34x8E2fOGuZkPt_k7on0ZAjvGofcxZWa6A40fE_uZNN8e_jS95gJ6OkQjLEDsdbR1oeQdc')"></div>
+</div>
+<div class="relative z-20 pt-4">
+<h3 class="font-headline-project text-2xl font-bold italic tracking-tight text-on-primary-fixed">Aetheria</h3>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant font-medium">Kinetic Creative Web Experience</p>
+</div>
+</div>
+<!-- Tile 3: Synapse -->
+<div class="bg-surface-container-high text-on-surface rounded-[32px] p-6 flex flex-col justify-between h-[380px] relative overflow-hidden group shadow-sm">
+<div class="flex items-start justify-between relative z-20">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-meta text-label-meta uppercase tracking-wider font-bold shadow-sm">Workflow Engine</span>
+<a aria-label="Open Synapse" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+<div class="absolute inset-x-6 top-20 bottom-24 rounded-2xl overflow-hidden bg-surface-container-lowest group-hover:scale-105 transition-all duration-500 shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="Sleek glassmorphic workflow automation graph editor interface showing interconnected nodes and data payload metrics" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuxKFT3oW9gBuv3uUk_K6bir9po5lwkC9c5Pw4PsT6y6Mk0fY_EsJIgfZjHdcYoXR2Y2xX873oj3xEIffNEGWQOc9_0Fvj9UlLIusgEvc6sDDfcs4jh99LxSlUQnV9vm-OlihZhXcskNnSksG-AcWVboL_pLYQ1nLBF92LguciJRIZ_V-KyeAoEHOmKaQ3BHm2d_3FC2OPJcIKcyumGxjH_2nnIu8-8dJ5YIU99MI')"></div>
+</div>
+<div class="relative z-20 pt-4">
+<h3 class="font-headline-project text-2xl font-bold italic tracking-tight text-on-surface">Synapse</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Automation Workflow Engine</p>
+</div>
+</div>
+<!-- Tile 4: Verde -->
+<div class="bg-surface-container text-on-surface rounded-[32px] p-6 flex flex-col justify-between h-[380px] relative overflow-hidden group shadow-sm">
+<div class="flex items-start justify-between relative z-20">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-meta text-label-meta uppercase tracking-wider font-bold shadow-sm">Index System</span>
+<a aria-label="Open Verde" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+<div class="absolute inset-x-6 top-20 bottom-24 rounded-2xl overflow-hidden bg-surface-container-lowest group-hover:scale-105 transition-all duration-500 shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="Clean minimalist editorial database website interface with elegant typography, clean tabular metadata and data cards" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoxZQFy9ggB_McASsSK89DG4rLlrhTf8SuK1mvq-QOxGtdYqHa5eUbVJrIj30QfQOtcmGPNumTjvbdHbhJ8W9JWkv6X9pz5TjOvHzHQLOtXyF9uzbbg9ftKTib4OqET1ZtMiOUnPvwJ5FmHqD7bAxU7t-kkOHAv8CRptNClcZRKocDfje6vDNTsOeR24aoEEmS40Vd3ojkF0CK50DoL0GXGwtogzgzr5bcScCPeFc')"></div>
+</div>
+<div class="relative z-20 pt-4">
+<h3 class="font-headline-project text-2xl font-bold italic tracking-tight text-on-surface">Verde</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Sustainable Tech Index</p>
+</div>
+</div>
+<!-- Tile 5: Nova OS -->
+<div class="bg-inverse-surface text-inverse-on-surface rounded-[32px] p-6 flex flex-col justify-between h-[380px] relative overflow-hidden group shadow-lg">
+<div class="flex items-start justify-between relative z-20">
+<span class="px-3.5 py-1.5 rounded-full bg-white/10 text-white font-label-meta text-label-meta uppercase tracking-wider font-bold">Prompt Architecture</span>
+<a aria-label="Open Nova OS" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-inverse-surface transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+<div class="absolute inset-x-6 top-20 bottom-24 rounded-2xl overflow-hidden bg-surface-container-high group-hover:scale-105 transition-all duration-500">
+<div class="w-full h-full bg-cover bg-center" data-alt="Minimalist black and cream terminal user interface showing large language model prompt routing and evaluation metrics" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0lAvPydKPpDkirJGT07aG-JWE7OgN-8Y16GqBUVQCNfD6m9NgpQf4TN1sBF7zS6UGUAtteu0aZXRa6-M_4LZTAxsoMYNrd5SzW_vefsGhdNPZfjffUVLKZ7nBnj6a8u6x-h9K0Gdcm5HppWCuTZVTo3-di9CTCej8GCrX99gOseQ78gvlMyKyemC8CBp_VxySaWfME3dDsUCrH1imDKzhMnoQywEw0pTK_CBnYHs')"></div>
+</div>
+<div class="relative z-20 pt-4">
+<h3 class="font-headline-project text-2xl font-bold italic tracking-tight text-white">Nova OS</h3>
+<p class="font-body-md text-body-md text-surface-variant">AI Prompt Architecture Suite</p>
+</div>
+</div>
+<!-- Tile 6: Monolith -->
+<div class="bg-surface-container-high text-on-surface rounded-[32px] p-6 flex flex-col justify-between h-[380px] relative overflow-hidden group shadow-sm">
+<div class="flex items-start justify-between relative z-20">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-meta text-label-meta uppercase tracking-wider font-bold shadow-sm">3D WebGL</span>
+<a aria-label="Open Monolith" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+<div class="absolute inset-x-6 top-20 bottom-24 rounded-2xl overflow-hidden bg-surface-container-lowest group-hover:scale-105 transition-all duration-500 shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="Brutalist 3D interactive portfolio platform interface showcase with architectural renders and precision typography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6wTZtayi56AhKv4ajeVpfHEP-wSGkrSCO7n4nl9V94KszbR4Ud1-5PYgjvGWNRC0jq0iINW6TAoe9TopAcYvIledTRjgD4KYUmh6YBJ_-37oJvFuX0gvJeJQk2rrpuZTnoItfAtYLtuSlRgJpKOCqAS2zUf8vagEHkMxuDHUoKWmmxAmk3TGjFuiKGgArY-R96ARulUJs3s4CQr0VIeZb_O2GKUCj3Qz5z8ZQFsg')"></div>
+</div>
+<div class="relative z-20 pt-4">
+<h3 class="font-headline-project text-2xl font-bold italic tracking-tight text-on-surface">Monolith</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">3D Portfolio Platform</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: EXPERIENCE SECTION (Dark stage on cloud backdrop with watermark) -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin my-12" id="experience">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-[40px] p-8 sm:p-14 lg:p-16 relative overflow-hidden shadow-2xl">
+<!-- Faint Giant Watermark Lettering -->
+<div class="absolute top-1/2 -left-8 -translate-y-1/2 pointer-events-none select-none opacity-5 font-display-hero text-[14vw] tracking-tighter uppercase whitespace-nowrap leading-none">
+        EXPERIENCE
+      </div>
+<!-- Header Row -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-10 border-b border-white/10 gap-4 relative z-10">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-meta text-label-meta uppercase tracking-widest text-primary-container font-bold">/EXPERIENCE</span>
+</div>
+<div class="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full backdrop-blur-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-body-code text-body-code text-surface-variant">Websites built: 20+</span>
+</div>
+</div>
+<!-- Experience Matrix Rows -->
+<div class="divide-y divide-white/10 relative z-10 mt-2">
+<!-- Item 01 -->
+<div class="py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:pl-4 transition-all duration-300">
+<div class="flex items-start md:items-center gap-4 sm:gap-6">
+<span class="font-body-code text-body-code text-primary-container font-semibold">01 /</span>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-white group-hover:text-primary-container transition-colors">Freelance Web Developer</h4>
+<p class="font-body-md text-body-md text-surface-variant mt-1">Fullstack client websites &amp; bespoke interactive UI</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-body-code text-body-code text-secondary">2023 — Present</span>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-primary-container transition-colors">arrow_forward</span>
+</div>
+</div>
+<!-- Item 02 -->
+<div class="py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:pl-4 transition-all duration-300">
+<div class="flex items-start md:items-center gap-4 sm:gap-6">
+<span class="font-body-code text-body-code text-primary-container font-semibold">02 /</span>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-white group-hover:text-primary-container transition-colors">Personal Website Projects</h4>
+<p class="font-body-md text-body-md text-surface-variant mt-1">20+ experimental &amp; production web tools deployed</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-body-code text-body-code text-secondary">2022 — 2024</span>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-primary-container transition-colors">arrow_forward</span>
+</div>
+</div>
+<!-- Item 03 -->
+<div class="py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:pl-4 transition-all duration-300">
+<div class="flex items-start md:items-center gap-4 sm:gap-6">
+<span class="font-body-code text-body-code text-primary-container font-semibold">03 /</span>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-white group-hover:text-primary-container transition-colors">AI + Automation Student</h4>
+<p class="font-body-md text-body-md text-surface-variant mt-1">Exploring autonomous agents, neural workflows &amp; fine-tuning</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-body-code text-body-code text-secondary">2023 — Present</span>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-primary-container transition-colors">arrow_forward</span>
+</div>
+</div>
+<!-- Item 04 -->
+<div class="py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 group hover:pl-4 transition-all duration-300">
+<div class="flex items-start md:items-center gap-4 sm:gap-6">
+<span class="font-body-code text-body-code text-primary-container font-semibold">04 /</span>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-white group-hover:text-primary-container transition-colors">Tech Explorer &amp; Builder</h4>
+<p class="font-body-md text-body-md text-surface-variant mt-1">Building micro-SaaS, automated scripts &amp; creative web experiments</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-body-code text-body-code text-secondary">2021 — Present</span>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-primary-container transition-colors">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: PROJECT LIST / SHOWCASE -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin my-16">
+<!-- Micro-marquee label band -->
+<div class="overflow-hidden select-none mb-8 py-2">
+<div class="flex whitespace-nowrap items-center font-display-hero text-sm font-bold text-outline-variant tracking-widest uppercase animate-[marquee_20s_linear_infinite]">
+<span class="mx-3">showcase • showcase • showcase • showcase • showcase • showcase • showcase • showcase •</span>
+<span class="mx-3">showcase • showcase • showcase • showcase • showcase • showcase • showcase • showcase •</span>
+</div>
+</div>
+<!-- Numbered Editorial Showcase Rows -->
+<div class="space-y-4">
+<!-- Project 01 -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all duration-300 group shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+<span class="font-body-code text-body-code text-primary font-bold">01 /</span>
+<h3 class="font-headline-project text-2xl sm:text-headline-project font-bold italic tracking-tight text-on-surface">Nexus Flow</h3>
+<span class="font-body-code text-body-code text-on-surface-variant sm:ml-4">Next.js • LangChain • FastAPI</span>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all font-label-pill text-label-pill uppercase tracking-wider shrink-0 shadow-sm w-fit" href="#">
+<span class="">View Project</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<!-- Project 02 -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all duration-300 group shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+<span class="font-body-code text-body-code text-primary font-bold">02 /</span>
+<h3 class="font-headline-project text-2xl sm:text-headline-project font-bold italic tracking-tight text-on-surface">Omnia Studio</h3>
+<span class="font-body-code text-body-code text-on-surface-variant sm:ml-4">E-Commerce • WebGL • Stripe</span>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all font-label-pill text-label-pill uppercase tracking-wider shrink-0 shadow-sm w-fit" href="#">
+<span class="">View Project</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<!-- Project 03 -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all duration-300 group shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+<span class="font-body-code text-body-code text-primary font-bold">03 /</span>
+<h3 class="font-headline-project text-2xl sm:text-headline-project font-bold italic tracking-tight text-on-surface">AutoAgent AI</h3>
+<span class="font-body-code text-body-code text-on-surface-variant sm:ml-4">Python • OpenAI API • Vector DB</span>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all font-label-pill text-label-pill uppercase tracking-wider shrink-0 shadow-sm w-fit" href="#">
+<span class="">View Project</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<!-- Project 04 -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 transition-all duration-300 group shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+<span class="font-body-code text-body-code text-primary font-bold">04 /</span>
+<h3 class="font-headline-project text-2xl sm:text-headline-project font-bold italic tracking-tight text-on-surface">Pulse Analytics</h3>
+<span class="font-body-code text-body-code text-on-surface-variant sm:ml-4">React • TailwindCSS • Node.js</span>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-surface-container-lowest text-on-surface hover:bg-inverse-surface hover:text-inverse-on-surface transition-all font-label-pill text-label-pill uppercase tracking-wider shrink-0 shadow-sm w-fit" href="#">
+<span class="">View Project</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 8: CONTACT CTA (Frosted Glass Editorial Card) -->
+<section class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin my-16" id="contact">
+<div class="bg-surface-container-lowest/80 backdrop-blur-2xl rounded-[40px] p-10 sm:p-16 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl mx-auto flex flex-col items-center space-y-8 relative z-10">
+<!-- Availability indicator pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container font-label-meta text-label-meta uppercase tracking-wider text-on-surface">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="">Available for New Projects</span>
+</div>
+<!-- Big Bold Invitation Headline -->
+<div class="space-y-4">
+<h2 class="font-headline-lg text-4xl sm:text-5xl lg:text-headline-lg font-extrabold tracking-tight text-on-surface uppercase">
+            HAVE A PROJECT IN MIND?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+            Together, we can create something clear, kinetic, and deeply impactful.
+          </p>
+</div>
+<!-- Colossal CTA Button -->
+<a class="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-inverse-surface text-inverse-on-surface font-title-md text-title-md font-bold tracking-tight hover:bg-primary-container hover:text-on-primary-fixed transition-all duration-300 shadow-xl group" href="mailto:contact@mdsaad.dev">
+<span class="">Contact Me</span>
+<span class="material-symbols-outlined text-[24px] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</a>
+<!-- Social Pills Network Strip -->
+<div class="flex flex-wrap items-center justify-center gap-3 pt-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container font-label-pill text-label-pill text-on-surface">
+<span class="w-6 h-6 rounded-full overflow-hidden shrink-0">
+<img alt="Md Saad" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB_Cxewfrx2LgY-fVU95QxY_cNYWJ34m-5fyQ4u9PGvII6IFruljwwK5-Gu5SvsCB4ktNUSE5S4Dj09g6heVW2es09p3fnS-KYZV3vwHQ7hBMX3F7Urvq95RUv8pO4yEYdJ4Ny6pVxy8DH7VgqVPWowBcCffzbb8AWfu0L2VScNPv2zijZDOxc1B1BmeEMuFw-lfjFNdjbicO6h8h_eSKEFc2DLc9ioc4tCQnxuuf3rGtHsB5VWlPTx4wxgFnP9KAvUQ">
+</span>
+<span class="font-semibold">Md Saad</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-inverse-surface hover:text-inverse-on-surface font-label-pill text-label-pill text-on-surface transition-all" href="https://github.com" rel="noopener" target="_blank">
+<span class="">GitHub</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-inverse-surface hover:text-inverse-on-surface font-label-pill text-label-pill text-on-surface transition-all" href="https://linkedin.com" rel="noopener" target="_blank">
+<span class="">LinkedIn</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-inverse-surface hover:text-inverse-on-surface font-label-pill text-label-pill text-on-surface transition-all" href="https://instagram.com" rel="noopener" target="_blank">
+<span class="">Instagram</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-inverse-surface hover:text-inverse-on-surface font-label-pill text-label-pill text-on-surface transition-all" href="https://x.com" rel="noopener" target="_blank">
+<span class="">X (Twitter)</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-inverse-surface hover:text-inverse-on-surface font-label-pill text-label-pill text-on-surface transition-all" href="https://behance.net" rel="noopener" target="_blank">
+<span class="">Behance</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="relative w-full bg-surface-container-low overflow-hidden pt-space-xl pb-space-lg"><div class="w-full max-w-[1440px] mx-auto px-gutter-mobile lg:px-margin relative z-10 flex flex-col justify-between min-h-[340px]"><div class="flex flex-col md:flex-row md:items-start justify-between gap-space-lg pb-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="MS Monogram Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UaP9ZtQA7s0llt4fGCPYQhHjFFJVGmI_5tZin7tb8w_CXLydJtd4RVoKjNd1sgn6-PqbTiPfWDZGf8m_fBTCdViV1umOC-xRoQO7kQyit7AHv9cOuKYL4yHeKc6A-PHbJdRJy8zTp2bfgIybln86Dxy7dRi7vmHaFxF0YMkyg4I3XZrmJm_fOBR_UY1NLaUmfSUn_fapaTX9Sva5V_jwjPiSKb1caqPBU_M9pCTg1h"><span class="font-title-md text-title-md tracking-tight text-on-surface">Md Saad</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1">Architecting avant-garde digital products, systems, and algorithmic automation interfaces.</p></div><div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-sm font-label-pill text-label-pill tracking-wider uppercase"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="experience" href="#">Experience</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></div></div><div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm font-label-meta text-label-meta text-on-surface-variant uppercase tracking-wider"><p class="">© 2025 Md Saad. All rights reserved.</p><p class="font-body-code text-body-code lowercase text-on-surface-variant">designed for precision &amp; scale</p></div></div><div class="pointer-events-none select-none absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-0 opacity-15 flex justify-center translate-y-1/4"><span class="font-display-hero text-[18vw] font-extrabold uppercase tracking-tighter text-outline whitespace-nowrap">md saad</span></div></footer>
+
+</body></html>
